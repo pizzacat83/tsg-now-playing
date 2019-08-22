@@ -4,13 +4,21 @@
   "description": "listen to songs in the mind of TSGers",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "start": "node src/index.js"
   },
   "author": "pizzacat83",
   "license": "MIT",
   "dependencies": {
     "@slack/client": "^5.0.2",
+    "fastify": "^2.7.1",
+    "fastify-sse": "^0.1.5",
+    "fastify-static": "^2.5.0",
+    "nodemon": "^1.19.1",
+    "youtube-api": "^2.0.10"
+  },
+  "devDependencies": {
     "eslint": "^6.2.1",
-    "fastify": "^2.7.1"
+    "eslint-config-google": "^0.13.0"
   }
 }
