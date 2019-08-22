@@ -7,7 +7,7 @@ evtSource.addEventListener('message', (e) => {
     'startSeconds': data.t});
 }, false);
 
-const onYouTubeIframeAPIReady = () => {
+function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '360',
     width: '640',
@@ -23,3 +23,7 @@ const onYouTubeIframeAPIReady = () => {
   });
 };
 
+const tag = document.createElement('script');
+tag.src = 'https://www.youtube.com/iframe_api';
+const firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);

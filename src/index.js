@@ -11,16 +11,7 @@ fastify.get('/', async (request, reply) => {
   return reply.sendFile('index.html');
 });
 
-fastify.get('/events', (request, reply) => {
-  const options = {};
-
-  reply.sse('sample data', options);
-
-  setInterval(() => {
-    index++;
-    reply.sse({id: 'd_T1StgldnM', t: 0}); // iwashi
-  }, 10000);
-});
+fastify.register(require('./youtube'));
 
 // Run the server!
 const start = async () => {
