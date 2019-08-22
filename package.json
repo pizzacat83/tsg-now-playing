@@ -1,0 +1,16 @@
+{
+  "name": "nowplaying",
+  "version": "0.1.0",
+  "description": "listen to songs in the mind of TSGers",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "author": "pizzacat83",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/client": "^5.0.2",
+    "eslint": "^6.2.1",
+    "fastify": "^2.7.1"
+  }
+}
