@@ -46,18 +46,3 @@ rtm.on('message', async (message) => {
 module.exports = routes;
 
 rtm.start();
-/*
-
-
-(async () => {
-  console.log((await new Promise((resolve, reject) => {
-    Youtube.search.list({part: 'id', type: 'video', q: 'plenty 少年'}, (err, data) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(data);
-      }
-    });
-  })).items[0].id.videoId);
-})();
-*/
