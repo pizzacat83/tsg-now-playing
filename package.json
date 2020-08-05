@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@slack/client": "^5.0.2",
-    "fastify": "^2.7.1",
+    "fastify": "^2.15.1",
     "fastify-sse": "^0.1.5",
     "fastify-static": "^2.5.0",
     "nodemon": "^1.19.1",
